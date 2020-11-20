@@ -100,7 +100,7 @@ export default function Search({
                 <a>All Designers</a>
               </Link>
             </li>
-            {brands.flatMap(({ node }) => (
+            {brands.map(({ node }) => (
               <li
                 key={node.path}
                 className={cn('py-1 text-accents-8', {
